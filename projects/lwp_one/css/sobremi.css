@@ -1,0 +1,89 @@
+.menuLinks a{
+	color: #000;
+}
+.menuLinks a:hover{
+	border-color: #000;
+}
+.menuLinks a.here{
+	border-color: #000;
+}
+.rsCont a{
+	color: #3a3939;
+}
+#btnHeadBar{
+	color: #000;
+}
+
+.cntPpal2{
+	width: 100%;
+	min-height: 85vh;
+	padding-top: 60px;
+	background: #fff;
+}
+.footCont{
+	position: relative;
+}
+
+
+
+.contSobremi{
+	width: 100%;
+	height: 100%;
+	max-width: 800px;
+	margin: auto;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.cntInfoMe{
+	width: 100%;
+	max-width: 200px;
+}
+.cntInfoMe h1{
+	font-size: 40px;
+	color: #fdacbf;
+	letter-spacing: 5px;
+}
+.cntInfoMe h2{
+	font-size: 20px;
+	color: #3a3939;
+	letter-spacing: 5px;
+}
+.cntInfoMe h3{
+	font-size: 15px;
+	color: #3a3939;
+	letter-spacing: 5px;
+	font-weight: normal;
+}
+.cntInfoMe img{
+	display: block;
+	width: 100%;
+	max-width: 150px;
+	margin: 10px 0px;
+}
+.cntInfoMe p{
+	display: block;
+	width: 100%;
+	font-size: 13px;
+	text-align: justify;
+}
+
+.cntImgInfo{
+	width: 200px;
+	padding: 20px;
+}
+.cntImgInfo img{
+	width: 100%;
+}
+
+
+@media only screen and (max-width: 500px){
+    .contSobremi {
+        justify-content: space-around;
+    }
+}
+
+
+

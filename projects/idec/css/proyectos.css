@@ -1,0 +1,392 @@
+.namePage{
+	color: #fff;
+}
+.respeNmPg{
+	color: #fff;
+	background: rgba(0,0,0,.6);
+	padding: 5px 0px;
+	border-radius: 5px;
+	position: absolute;
+	z-index: 10;
+	display: block;
+	width: 100%;
+	top: 150px;
+	left: 0;
+	margin: 0px;
+}
+.menubar{
+	color: #fff;
+}
+
+.fondoPpal{
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 1;
+	object-fit: cover;
+}
+.cntLinePro{
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+.cntLinePro span{
+	background: rgba(160,145,145,.7);
+	position: absolute;
+}
+.cntLinePro span:nth-child(-n+3){
+	top: 0px;
+	width: 1px;
+	height: 100%;
+}
+.cntLinePro span:nth-child(n+4){
+	left: 0px;
+	width: 100%;
+	height: 1px;
+}
+.cntLinePro span:nth-child(1){
+	left: 25%;
+}
+.cntLinePro span:nth-child(2){
+	left: 50%;
+}
+.cntLinePro span:nth-child(3){
+	left: 75%;
+}
+.cntLinePro span:nth-child(4){
+	top: 33.3333333333%;
+}
+.cntLinePro span:nth-child(5){
+	top: 66.6666666666%;
+}
+
+.cntBGPro{
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	display: block;
+	top: 0;
+	left: 0;
+}
+.cntBGPro img{
+	position: absolute;
+	z-index: 2;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%) scale(1.1);
+	opacity: 0;
+	transition: .6s all;
+}
+.cntBGPro img.showBG{
+	opacity: 1;
+	transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+.cntEnlPro{
+	position: fixed;
+	z-index: 5;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.cntEnl{
+	width: 25%;
+	height: 33.3333333333%;
+	background: transparent;
+	cursor: pointer;
+	transition: .5s all;
+	position: relative;
+}
+.cntEnl:nth-child(odd){
+	color: rgba(50,50,50,1);
+}
+.cntEnl:nth-child(even){
+	color: rgba(200,200,200,1);
+}
+.cntEnl:nth-child(odd):hover{
+	background: rgba(137, 220, 101, .7);
+}
+.cntEnl:nth-child(even):hover{
+	background: rgba(0, 71, 186, .7);
+}
+.cntEnl a{
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	cursor: pointer;
+}
+.cntEnl h1{
+	position: absolute;
+	display: block;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	text-align: left;
+	padding: 15px;
+	font-size: 22px;
+	font-weight: bold;
+	opacity: 0;
+	transition: 1s all;
+}
+.cntEnl:hover h1{
+	opacity: 1;
+}
+.cntEnl p{
+	position: absolute;
+	display: block;
+	width: 100%;
+	bottom: 0px;
+	padding: 10px;
+	text-align: right;
+	padding-right: 20px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	transition: .7s all;
+}
+.cntEnl:hover p{
+	font-size: 17px;
+	padding-right: 50px;
+}
+.cntEnl span{
+	display: block;
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	font-size: 60px;
+	opacity: 0;
+	transition: 1s all;
+}
+.cntEnl:hover span{
+	opacity: 1;
+}
+
+
+
+.cntPpal{
+	position: relative;
+	z-index: 10;
+	display: none;
+}
+
+.sliderContent{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.slider{
+	overflow: hidden;
+	height: 100%;
+}
+.slider_cont{
+	float: left;
+	height: 100%;
+	position: relative;
+}
+.slider img{
+	width: 100%;
+	height: 78%;
+	display: block;
+	object-fit: cover;
+}
+.sliderInfo{
+	display: block;
+	width: 100%;
+	height: 22%;
+	padding-bottom: 35px;
+}
+.sliderInfo1{
+	background: #5ab333;
+}
+.sliderInfo2{
+	background: #0047BA;
+}
+.sliderInfo h1{
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	display: block;
+	padding: 5px 0px;
+}
+.sliderInfo p{
+	text-align: center;
+	display: block;
+	font-weight: bold;
+	font-size: 14px;
+}
+.sliderInfo1 p{
+	color: #555;
+}
+.sliderInfo2 p{
+	color: #eee;
+}
+.sliderInfo span{
+	font-size: 15px;
+	color: #fff;
+	text-align: center;
+	display: block;
+	padding: 5px 0px;
+}
+.cntBtnSlide{
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+	height: 30px;
+	left: 0;
+	bottom: 5px;
+	clear: both;
+	display: flex;
+	justify-content: center;
+}
+#btnNext{
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin: 0px 10px;
+	font-size: 30px;
+	text-align: center;
+	border: none;
+	background: none;
+	color: #fff;
+	transition: .5s all;
+	cursor: pointer;
+	outline: none;
+	border-radius: 50%;
+}
+#btnPrev{
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin: 0px 10px;
+	font-size: 30px;
+	text-align: center;
+	border: none;
+	background: none;
+	color: #fff;
+	transition: .5s all;
+	cursor: pointer;
+	outline: none;
+	border-radius: 50%;
+}
+#btnNext:hover, #btnPrev:hover{
+	transform: scale(1.1);
+}
+
+.footer{
+	display: none;
+	background: #000;
+	border-top: 2px solid #89DC65;
+	color: #fff;
+}
+.contFoot1 p{
+	font-size: 10px;
+}
+.contFoot2{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	padding-top: 1px;
+}
+.contFoot2 a{
+	display: block;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	text-align: center;
+	text-decoration: none;
+	line-height: 30px;
+	margin: 5px;
+	background: #89DC65;
+	color: #000;
+}
+.contFoot3{
+	display: flex;
+	justify-content: space-around;
+	margin-right: 10px;
+}
+.contFoot3 span{
+	color: #89DC65;
+}
+.infoFoot{
+	margin: 5px;
+	font-size: 10px;
+	display: flex;
+}
+.infoFoot span{
+	margin-right: 5px;
+	font-size: 15px;
+	line-height: 30px;
+}
+
+
+@media only screen and (max-width: 1035px) {
+    
+	.cntPpal{
+		display: block;
+		padding: 0px;
+	}
+	.footer{
+		display: flex;
+	}
+	.cntEnlPro,.cntBGPro,.cntLinePro,.fondoPpal{
+		display: none;
+	}
+
+}
+@media only screen and (max-height: 560px) {
+    
+	.sliderContent{
+		height: 560px;
+	}
+	.cntBtnSlide{
+		position: relative;
+		margin: 0px;
+		padding: 0px;
+	}
+	.slider{
+		height: 93%;
+		clear: both;
+	}
+	.sliderInfo{
+		padding: 0px;
+	}
+	.cntBtnSlide{
+		height: 7%;
+		bottom: 0px;
+		background: #000;
+		padding-top: 4px;
+	}
+	.cntPpal{
+		height: 560px;
+	}
+
+}
+
+
+
+

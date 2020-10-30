@@ -1,0 +1,329 @@
+body{
+	font-family: MyriadPro;
+	overflow-x: hidden;
+	overflow-y: auto!important;
+	width: 100%;
+}
+html{
+	overflow-x: hidden;
+	cursor: grab;
+	overflow-y: auto!important;
+}
+
+
+
+.contenedor{
+	display: block;
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+}
+.sections{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sections1,.sections2{
+	overflow: hidden;
+}
+.sections:last-child{
+	height: auto;
+	overflow-x: hidden; 
+	display: block;
+	justify-content: initial;
+	align-items: initial;
+}
+
+.bg_first{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+.cntPort{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 10;
+	height: 400px;
+}
+.cntPort img{
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.cntPort .iconimg1{
+	top: 0;
+}
+.cntPort .iconimg2{
+	bottom: 0;
+	transform: translateX(-50%) rotate(-180deg); 
+}
+
+.cntNameCat{
+	margin: 10px;
+	display: block;
+	text-align: center;
+	padding: 10px;
+	border-radius: 50%;
+	background: transparent;
+	border: 2px solid #fff;
+	width: 130px;
+	height: 130px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 15px;
+}
+.cntNameCat p{
+	display: block;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 15px;
+	line-height: 30px;
+	font-family: AngleciaPro;
+}
+
+.sections2{
+	background: #475fa3;
+}
+.bg_second{
+	display: block;
+	width: 100%;
+	max-width: 350px;
+}
+.sections3{
+	padding: 50px 10px;
+	background: #fff;
+}
+
+.sections3 h1{
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 3px;
+	color: rgba(71,95,163,0.8);
+}
+.sections3 h1 b{
+	font-size: 30px;
+	text-align: center;
+	letter-spacing: 3px;
+	color: #475fa3;
+}
+
+.cntPrj{
+	display: block;
+	width: 100%;
+	max-width: 600px;
+	margin: 40px auto;
+}
+.cntPrj img{
+	display: block;
+	width: 100%;
+}
+.seeprj{
+	cursor: pointer;
+}
+.cntPrj p{
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #475fa3;
+	letter-spacing: 5px;
+	font-family: MyriadPro;
+	font-size: 13px;
+	margin-top: -20px;
+}
+.cntPrj p b{
+	font-family: AngleciaPro;
+}
+
+
+
+
+
+/*MODAL*/
+
+.modalPrj{
+	position: fixed;
+	z-index: 9000;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	cursor: initial!important;
+}
+.bg-closeM-prj{
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background: rgba(0,0,0,.5);
+}
+.cntMprj{
+	display: block;
+	position: absolute;
+	padding: 80px 30px;
+	padding-top: 55px;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	pointer-events: none;
+}
+.cntMprjBtn{
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	transform: translateZ(0) perspective(1px);
+	pointer-events: none;
+}
+.cntMprjBtn button{
+	pointer-events: all;
+	background: #fff;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	text-align: center;
+	display: block;
+	color: #000;
+	transition: .5s linear;
+}
+.closeBtnMprj{
+	position: absolute;
+	width: 30px;
+    height: 30px;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    line-height: 36px;
+	border-radius: 50%;
+}
+.closeBtnMprj:hover{
+	transform: translateZ(0) perspective(1px) scale(1.1);
+}
+.modalprjbtns_pass{
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	padding: 10px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translate3d(0, 0, 0) perspective(1px);
+}
+.prevBtnMprj, .nextBtnMprj{
+	border-radius: 10px;
+	width: 40px;
+	height: 40px;
+	font-size: 25px;
+	line-height: 48px;
+	transform: perspective(1px);
+	margin: 5px;
+}
+.prevBtnMprj:hover, .nextBtnMprj:hover{
+	transform: perspective(1px) scale(1.1);
+}
+
+.cntImgMPrj{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+	overflow-y: auto;
+	pointer-events: all;
+	outline: none;
+}
+#imgMPRJ{
+	display: block;
+	width: 100%;
+	position: relative;
+	z-index: 2;
+}
+
+.loader-prj{
+	display: flex;
+	list-style: none;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	transform: translate3d( -50%, -50%, 0);;
+}
+.loader-prj li{
+	display: block;
+	width: 6px;
+	height: 20px;
+	background: #000;
+	margin: 0px 4px;
+	animation: loadprj .7s infinite alternate;
+}
+@keyframes loadprj{
+	0%{transform: scaleY(1);}
+	25%{transform: scaleY(1);}
+	50%{transform: scaleY(1);}
+	75%{transform: scaleY(1);}
+	100%{transform: scaleY(2);}
+}
+.loader-prj li:nth-child(1){animation-delay: .1s;}
+.loader-prj li:nth-child(2){animation-delay: .2s;}
+.loader-prj li:nth-child(3){animation-delay: .3s;}
+.loader-prj li:nth-child(4){animation-delay: .4s;}
+.loader-prj li:nth-child(5){animation-delay: .5s;}
+.loader-prj li:nth-child(6){animation-delay: .6s;}
+
+
+@media only screen and (max-width: 600px){
+	.cntPort{
+		width: 300px;
+		height: auto;
+	}
+	.cntPort img{
+		left: 0;
+		position: relative;
+		transform: translateX(0);
+	}
+	.cntPort .iconimg2{
+		transform: translateX(0);
+	}
+}
+@media only screen and (max-height: 600px){
+	.cntPort{
+		width: 300px;
+		height: auto;
+	}
+	.cntPort img{
+		left: 0;
+		position: relative;
+		transform: translateX(0);
+	}
+	.cntPort .iconimg2{
+		transform: translateX(0);
+	}
+	.bg_second{
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+}

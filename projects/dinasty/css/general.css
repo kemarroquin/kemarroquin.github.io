@@ -1,0 +1,501 @@
+@font-face {
+    font-family: Opensans;
+    src: url(../fonts/Opensans.ttf);
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body, html{
+	font-family: Opensans;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+.contPpal{
+	width: 100%;
+	min-height: 100%;
+	padding: 20px;
+}
+.ppal{
+	width: 100%;
+	max-width: 1800px;
+	margin: auto;
+	display: block;
+	border: 1px solid #ccc;
+	overflow: hidden;
+}
+.page{
+	display: block;
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+	padding-bottom: 70px;
+}
+
+.headVerti{
+	width: 150px;
+	height: 100%;
+	min-height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+.btnLogo{
+	width: 75px;
+	height: 75px;
+	border: 8px solid #d6cbbd;
+	border-radius: 50%;
+	background: #fff;
+	text-align: center;
+	font-size: 30px;
+	line-height: 15px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+	transition: .4s all;
+	outline: none;
+}
+.menuShow{
+	transform: rotate(0deg);
+}
+.menuShow:hover{
+	transform: rotate(90deg) scale(1.1);
+}
+.menuHide{
+	transform: rotate(90deg);
+}
+.menuHide:hover{
+	transform: rotate(0deg) scale(1.1);
+}
+
+
+.btnFind{
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: 10px auto;
+	margin-top: 20px;
+	border: none;
+	text-align: center;
+	background: transparent;
+	cursor: pointer;
+	font-size: 15px;
+	outline: none;
+	transition: .4s all;
+	color: #581504;
+}
+.btnFind:hover{
+	transform: scale(1.1) rotate(45deg);
+}
+
+.cntRs{
+	width: 20px;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.rsSoci{
+	display: block;
+	width: 20px;
+	height: 20px;
+	text-decoration: none;
+	text-align: center;
+	color: #581504;
+	transition: .4s all;
+}
+.rsSoci:hover{
+	transform: scale(1.1);
+}
+
+.headHori{
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	display: block;
+	height: 120px;
+}
+.contHori{
+	position: relative;
+	padding-left: 160px;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+.miniHori{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.menu{
+	position: absolute;
+	display: block;
+	list-style: none;
+	display: flex;
+	padding: 10px 20px;
+	top: 35px;
+}
+.menu li{
+	display: block;
+	margin: 0px 20px;
+}
+.menu li a{
+	display: flex;
+	text-decoration: none;
+	color: #a48c6a;
+	transition: .5s all;
+	cursor: pointer;
+	position: relative;
+}
+.menu li a.here{
+	color: #581504;
+}
+.menu li a:hover{
+	color: #581504;
+}
+.menu li a span{
+	margin: 0px 2px;
+}
+.menu li a span.icon-cplus{
+	margin-top: 2px;
+}
+
+
+.moreOpcM11{
+	display: none;
+	position: absolute;
+	top: 40px;
+	background: #000;
+	width: 100px;
+}
+.moreOpcM11 .divArrow{
+	width: 10px;
+	height: 10px;
+	background: #000;
+	position: absolute;
+	top: -5px;
+	left: 50%;
+	transform: translateX(-50%) rotate(45deg);
+}
+.menu li .moreOpcM11 a{
+	display: block;
+	width: 100%;
+	padding: 6px;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+	position: relative;
+	z-index: 2;
+}
+.menu li .moreOpcM11 a:hover{
+	background: #444;
+}
+.moreOpcM1:hover .moreOpcM11{
+	display: block;
+}
+
+
+.logo{
+	position: relative;
+	margin-right: 70px;
+	margin-top: 35px;
+	float: right;
+	width: 200px;
+	opacity: 1;
+	transition: .7s all;
+	z-index: 1;
+}
+.logo2{
+	width: 150px;
+	position: absolute;
+	right: 10px;
+	top: 40px;
+	opacity: 0;
+	transition: .7s all;
+	z-index: 2;
+}
+.logo3{
+	width: 60px;
+	position: absolute;
+	right: 20px;
+	top: 30px;
+	opacity: 0;
+	transition: .7s all;
+	z-index: 3;
+}
+
+
+
+
+
+.footer{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	border-top: 1px solid #ccc;
+	padding: 10px 10px;
+	font-size: 12px;
+}
+.cntFt{
+	width: 222px;
+	margin: 5px;
+}
+.cntFot1 img{
+	width: 100px;
+}
+.cntFot1 p{
+	font-size: 12px;
+	margin-top: 100px;
+}
+.cntFot2{
+	width: 100px;
+}
+.cntFot3, .cntFot4{
+	width: 140px;
+}
+.cntFot3 a, .cntFot4 a{
+	text-align: left;
+	display: block;
+	text-decoration: none;
+	color: #000;
+}
+.cntFot3 a:hover, .cntFot4 a:hover{
+	text-decoration: underline;
+}
+.suscrip{
+	display: flex;
+	width: 100%;
+}
+.suscrip input{
+	padding: 5px;
+	font-size: 15px;
+	outline: none;
+	width: 80%;
+	font-family: Opensans;
+}
+.suscrip button{
+	cursor: pointer;
+	width: 20%;
+	display: block;
+	border: none;
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	font-size: 15px;
+}
+
+
+
+
+.load{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	z-index: 500;
+	transition: 1s all;
+	left: 0;
+	top: 0;
+}
+.search{
+	position: fixed;
+	z-index: 400;
+	background: #fff;
+	display: none;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	padding: 30px;
+}
+
+.closeSearch{
+	display: block;
+	width: 50px;
+	height: 50px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 50px;
+	background: #fff;
+	color: #000;
+	border-radius: 50%;
+	border: 1px solid #000;
+	transition: .5s all;
+	cursor: pointer;
+	margin: auto;
+	margin-bottom: 30px;
+}
+.closeSearch:hover{
+	transform: rotate(90deg);
+}
+.cntPpalSearch{
+	max-width: 500px;
+	margin: auto;
+}
+.cntPpalSearch p{
+	font-size: 20px;
+	display: block;
+	margin: 10px auto;
+}
+.cntSearch{
+	width: 100%;
+	display: flex;
+	margin-top: 50px;
+}
+.cntSearch input{
+	border: none;
+	border-bottom: 1px solid #000;
+	color: #000;
+	font-family: Opensans;
+	font-size: 30px;
+	width: 75%;
+	outline: none;
+}
+.cntSearch button{
+	width: 25%;
+	font-size: 20px;
+	text-align: center;
+	background: #000;
+	color: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+
+
+
+/*RESPONSIVE*/
+
+.btnRespMenu{
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	background: #fff;
+	color: #000;
+	border: 1px solid #000;
+	border-radius: 50%;
+	margin: 20px auto;
+	cursor: pointer;
+	display: block;
+	transition: .5s all;
+	outline: none;
+}
+.btnRespMenu:hover{
+	transform: scale(1.1) rotate(90deg);
+}
+.menu2{
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 400;
+    background: #fff;
+	display: none;
+}
+.menu2Opc{
+	display: block;
+	width: 300px;
+	margin: auto;
+	margin-top: 50px;
+}
+.menu2Opc a, .menu2Opc label{
+	cursor: pointer;
+	display: block;
+	width: 100%;
+	padding: 5px;
+	color: #000;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	transition: .6s all;
+	box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,1), inset 0px 0px 0px 0px rgba(0,0,0,1);
+}
+.menu2Opc a:hover, .menu2Opc label:hover{
+	box-shadow: inset 0px -2px 0px 0px rgba(0,0,0,1), inset 0px 2px 0px 0px rgba(0,0,0,1);
+}
+.menu2Opc a.here, .menu2Opc label.here{
+	box-shadow: inset 0px -2px 0px 0px rgba(0,0,0,1), inset 0px 2px 0px 0px rgba(0,0,0,1);	
+}
+.menu2Log{
+	position: absolute;
+	display: block;
+	width: 150px;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.menu2Opc input{
+	display: none;
+}
+.menu2Opc input:checked ~ .cntMoreOpc{
+	display: block;
+}
+.cntMoreOpc{
+	display: none;
+	background: #000;
+}
+.menu2Opc .cntMoreOpc a{
+	color: #fff;
+}
+.menu2Opc .cntMoreOpc a:hover{
+	box-shadow: inset 0px -2px 0px 0px rgba(255,255,255,1), inset 0px 2px 0px 0px rgba(255,255,255,1);
+}
+
+@media only screen and (max-width: 1125px) {
+	.menu{
+		display: none;
+	}
+    .menu2{
+    	
+    }
+}
+
+@media only screen and (max-width: 550px) {
+	.logo{
+		opacity: 0;
+	}
+	.logo2{
+		opacity: 1;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.logo2{
+		opacity: 0;
+	}
+	.logo3{
+		opacity: 1;
+	}
+}
+
+
+/*SCROLLBAR*/
+
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+::-webkit-scrollbar-thumb {
+  	background: #a48c6a;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #772009;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #581504;
+}

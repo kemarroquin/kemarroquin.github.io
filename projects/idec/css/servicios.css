@@ -1,0 +1,271 @@
+.namePage{
+	color: #fff;
+}
+.respeNmPg{
+	color: #fff;
+}
+.buttonsMenu button{
+	color: #fff;
+}
+.footer{
+	border-top: 1px solid;
+}
+.foot1{
+	border-color: #000;
+	background: #000;
+}
+.foot2{
+	border-color: #fff;
+	background: transparent;
+}
+.contFoot1 p{
+	color: #fff;
+}
+.contFoot2 a{
+	background: #fff;
+}
+.rs-foot1{
+	color: #000;
+}
+.rs-foot2{
+	color: #0047BA;
+}
+.infoFoot{
+	color: #fff;
+}
+.infoFoot span{
+	color: #89DC65;
+}
+
+.fondoService1, .fondoService2, .fondoService3{
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.fondoService1{
+	display: block;
+}
+.fondoService2, .fondoService3{
+	display: none;
+}
+.fondoService1 img, .fondoService2 img, .fondoService3 img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.cntPpal{
+	position: relative;
+	z-index: 2;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.cntService{
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	height: 444px;
+	overflow: hidden;
+	position: relative;
+}
+.cntSerB{
+	background: rgba(0,71,186,.2);
+}
+.cntSerG{
+	background: rgba(71,167,33,.5);
+}
+.cntInfoSer1, .cntInfoSer2, .cntInfoSer3{
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+.cntInfoSer1{
+	display: block;
+}
+.cntInfoSer{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+}
+.cntInfS1{
+	display: block;
+	text-align: right;
+	width: 50%;
+	padding: 20px;
+}
+.cntInfS2{
+	display: block;
+	text-align: left;
+	width: 50%;
+	padding: 20px;
+}
+.cntInfS3{
+	display: block;
+	text-align: right;
+	width: 50%;
+	padding: 20px;
+}
+.cntInfS4{
+	display: block;
+	text-align: left;
+	width: 50%;
+	padding: 20px;
+}
+.cntInfS1 p{
+	color: #89DC65;
+	font-weight: bold;
+	font-size: 16px;
+}
+.cntInfS4 p{
+	color: #0047ba;
+	font-weight: bold;
+	font-size: 16px;
+}
+.cntInfS1 h1{
+	font-size: 50px;
+}
+.cntInfS4 h1{
+	font-size: 50px;
+}
+.cntInfS2,.cntInfS3{
+	font-size: 14px;
+}
+.cntInfoSer ul{
+	list-style: none;
+	display: block;
+	font-weight: bold;
+}
+.cntInfoSer1 .cntInfS1{
+	padding-top: 130px;
+}
+.cntInfoSer1 .cntInfS2{
+	padding-top: 70px;
+}
+.cntInfoSer2 .cntInfS3{
+	padding-top: 190px;
+	padding-left: 60px;
+}
+.cntInfoSer2 .cntInfS4{
+	padding-top: 110px;
+}
+.cntInfoSer3 .cntInfS1{
+	padding-top: 110px;
+}
+.cntInfoSer3 .cntInfS2{
+	padding-top: 180px;
+}
+
+.CntBtnPassSer{
+	display: block;
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	left: 2%;
+	transform: translateY(-50%) translateX(0%); 
+	width: 20px;
+}
+.CntBtnPassSer input{
+	display: none;
+}
+.CntBtnPassSer label{
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 7px auto;
+	cursor: pointer;
+	border-radius: 50%;
+	background: rgba(255,255,255,.6);
+}
+.CntBtnPassSer input:checked + label{
+	width: 15px;
+	height: 15px;
+	background: #fff;
+}
+.CntBtnPassSer label:hover{
+	background: #fff;
+}
+
+.cntInfoSerV2{
+	display: none;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	padding-top: 60px;
+}
+.cntInfSs1 p{
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+}
+.cntInfSs1 h1{
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	margin-top: 10px;
+}
+.cntInfSs2{
+	padding-top: 20px;
+	width: 100%;
+	max-width: 700px;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+.cntInfSs2 ul{
+	list-style: none;
+}
+
+.cntInfoSer1 .cntInfSs1, .cntInfoSer3 .cntInfSs1{
+	border-bottom: 2px solid #89DC65;
+	padding-bottom: 10px;
+}
+.cntInfoSer2 .cntInfSs1{
+	border-bottom: 2px solid #0047BA;
+	padding-bottom: 10px;
+}
+.cntInfoSer1 .cntInfSs1 p, .cntInfoSer3 .cntInfSs1 p{
+	color: #89DC65;
+}
+.cntInfoSer2 .cntInfSs1 p{
+	color: #0047BA;
+}
+
+
+@media only screen and (max-width: 1000px){
+	.CntBtnPassSer{
+		display: flex;
+		top: 10px;
+		left: 50%;
+		transform: translateY(0%) translateX(-50%);
+		width: auto;
+		height: 20px;
+	}
+	.CntBtnPassSer label{
+		margin: auto 2px;
+	}
+}
+@media only screen and (max-width: 960px){
+	.cntService{
+		height: auto;
+	}
+	.cntInfoSer{
+		display: none;
+	}
+	.cntInfoSerV2{
+		display: block;
+	}
+}
+@media only screen and (max-width: 500px){
+	.cntInfSs2{
+		font-size: 13px;
+	}
+}

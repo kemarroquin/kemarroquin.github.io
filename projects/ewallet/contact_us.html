@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E-Wallet | Contact Us</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/contact_us.css">
+	<link rel="icon" type="image/png" href="img/logo2.png"/>
+	<link href="https://file.myfontastic.com/6KRwsJBz3pLHiTNvct9dxL/icons.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+		<div class="cont_head">
+			<div class="cont_head_ppal">
+				<div class="cont_head1">
+					<ul class="menu">
+						<li>
+							<input type="checkbox" id="menu_func">
+							<label for="menu_func" class="icon-menu">Menú</label>
+							<ul class="menu2">
+								<li><a href="index.html" class="icon-home">Inicio</a></li>
+								<li><a href="about_us.html" class="icon-us">Sobre Nosotros</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="cont_head2">
+					<img class="logo1" id="logo1" src="img/logo1.png" alt="">
+					<img class="logo2" id="logo2" src="img/logo2.png" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
+
+<div class="ppal">
+
+<div class="contenedorppal">
+	<div class="cont1">
+		<h1>CONTACTO</h1>
+		<br>
+		<p>Esta es la forma más rápida para contactar con nosotros. Sabemos que quizás te es más cómodo enviarnos un email pero te aseguramos que este formulario de contacto lo revisamos casi a diario. Rellena los datos y te responderemos lo antes posible.</p>
+		<br>
+		<h2>Agradecemos ideas, sugerencias, feedback y oportunidades de negocio</h2>
+		<br>
+		<p>Nos llegan muchas consultas al día, así que no podemos garantizarte una respuesta ni mucho menos un tiempo de respuesta. Intentamos dar salida a todas las peticiones, no siempre es fácil.</p>
+		<br><br>
+		<p>¡Gracias por tu comprensión!</p>
+		<div class="info">
+			<label class="icon-map-marker"><br>Av. Escalon casa #50, San Salvador, El Salvador</label>
+			<label class="icon-phone"><br>+503 2257-7777</label>
+			<label class="icon-envelope-o"><br><u>e-wallet_contact@gmail.com</u></label>
+		</div>
+	</div>
+	<div class="cont2">
+		<form>
+			<p>Nombres <label>(requerido)</label></p>
+			<input id="nombre" name="nombre" type="text" placeholder="José Osvaldo" autofocus required>
+			<label id="error-n1" class="mensaje_error">Complete este campo.</label>
+			<p>Apellidos <label>(requerido)</label></p>
+			<input id="apellido" name="apellido" type="text" placeholder="Urquilla Martínez" required>
+			<label id="error-a1" class="mensaje_error">Complete este campo.</label>
+			<p>E-Mail <label>(requerido)</label></p>
+			<input id="correo" name="correo" type="text" placeholder="example@example.ejm" required>
+			<label id="error-c1" class="mensaje_error">Complete este campo.</label>
+			<label id="error-c2" class="mensaje_error">Formato de correo incorrecto.</label>
+			<p>Prefijo Telefónico <label>(requerido)</label></p>
+			<input id="prefijo" name="prefijo" type="text" placeholder="+xxx ó +x-xxx" required>
+			<label id="error-p1" class="mensaje_error">Complete este campo.</label>
+			<label id="error-p2" class="mensaje_error">Formato de prefijo incorrecto.<br><i><u>Formatos:</u><br>+xxx<br>+x-xxx</i></label>
+			<p>Teléfono <label>(requerido)</label></p>
+			<input id="telefono" name="telefono" type="text" placeholder="mín: 8 - máx: 16" maxlength="16" required>
+			<label id="error-t1" class="mensaje_error">Complete este campo.</label>
+			<label id="error-t2" class="mensaje_error">Debe ingresar solamente números.</label>
+			<label id="error-t3" class="mensaje_error">El número debe estar en el rango de 8-16 caracteres.</label>
+			<p>Asunto <label>(requerido)</label></p>
+			<select id="asunto" name="asunto" required>
+				<option value="0"></option>
+				<option value="1">Queja</option>
+				<option value="2">Felicitaciones</option>
+				<option value="3">Trabajo</option>
+				<option value="4">Contratar</option>
+				<option value="5">Sugerencias</option>
+			</select>
+			<label id="error-as1" class="mensaje_error">Elija una opción.</label>
+			<p>Mensaje <label>(requerido)</label></p>
+			<textarea id="mensaje" name="mensaje" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis debitis quisquam quis nulla officia, dolores, natus suscipit earum doloremque at modi esse dicta ad beatae accusantium adipisci tenetur soluta qui."></textarea required>
+			<label id="error-tt1" class="mensaje_error">Escriba un mensaje.</label>
+			<input class="botonsito" id="enviar" name="enviar" type="button" value="ENVIAR">
+			<input class="botonsito" id="reiniciar" name="reiniciar" type="reset" value="RESTABLECER">
+		</form>
+	</div>
+</div>
+
+<script src="js/contact_us.js"></script>
+
+<div class="footer" id="footer">
+	<span>Creat by: E-Wallet developers</span>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "javier";
+  src:url("fonts/javier.eot");
+  src:url("fonts/javier.eot?#iefix") format("embedded-opentype"),
+    url("fonts/javier.woff") format("woff"),
+    url("fonts/javier.ttf") format("truetype"),
+    url("fonts/javier.svg#javier") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "javier" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "javier" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\61";
+}
+.icon-instagram:before {
+  content: "\62";
+}
+.icon-bar:before {
+  content: "\63";
+}
+.icon-aright:before {
+  content: "\64";
+}
+.icon-aleft:before {
+  content: "\65";
+}
+.icon-phone:before {
+  content: "\66";
+}
+.icon-mail:before {
+  content: "\67";
+}
+.icon-map:before {
+  content: "\68";
+}
+.icon-close:before {
+  content: "\69";
+}
+.icon-build1:before {
+  content: "\6a";
+}
+.icon-build2:before {
+  content: "\6b";
+}
+.icon-build3:before {
+  content: "\6c";
+}
+.icon-build4:before {
+  content: "\6d";
+}
+.icon-aleft2:before {
+  content: "\6e";
+}
+.icon-aright2:before {
+  content: "\6f";
+}
+.icon-resizee:before {
+  content: "\70";
+}
+.icon-resized:before {
+  content: "\71";
+}

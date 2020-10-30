@@ -1,0 +1,153 @@
+.cntPpal{
+	padding-top: 60px;
+	padding-bottom: 100px;
+	display: flex;
+	justify-content: center;
+	background: url(../img/fondo1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.menuLinks a{
+	color: #fff;
+}
+.menuLinks a:hover{
+	border-color: #fff;
+}
+.menuLinks a.here{
+	border-color: #fff;
+}
+.rsCont a{
+	color: #969696;
+}
+#btnHeadBar{
+	color: #fff;
+}
+
+.proyectWelcome{
+	display: block;
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	margin-top: 100px;
+	padding: 10px 30px;
+	overflow: hidden;
+}
+
+.imgProyectWel1,.imgProyectWel2{
+	width: 100%;
+	max-width: 220px;
+	display: block;
+	margin: auto;
+	margin-bottom: 10px;
+}
+.imgProyectWel3{
+	display: block;
+	width: 100%;
+	max-width: 100px;
+	margin: auto;
+}
+
+.cntFootCont{
+	display: flex;
+	justify-content: flex-end;
+	padding-bottom: 25px;
+}
+.cntFootCont a{
+	color: #fff;
+}
+
+.contenedor{
+	background: #eaeae1;
+	padding: 100px 20px;
+	min-height: 100%;
+}
+
+.titleProyect{
+	display: block;
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 30px;
+	font-weight: bold;
+	color: #3a3939;
+}
+.menuProyect{
+	width: 100%;
+	max-width: 1440px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.contProj{
+	width: 400px;
+	padding: 10px;
+	display: block;
+}
+.cntProyect{
+	width: 100%;
+	max-width: 400px;
+	height: 400px;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #edb4c1;
+	transition: .8s all;
+}
+.cntProyect:hover{
+	background: #3a3939;
+}
+.cntProyect img{
+	width: 100%;
+	height: auto;
+	max-width: 200px;
+	max-height: 100%;
+	margin: auto;
+}
+.contProj p{
+	display: block;
+	padding: 15px;
+	color: #3a3939;
+	background: transparent;
+	font-size: 20px;
+	transition: .8s all;
+}
+.cntProyect:hover + p{
+	background: #edb4c1;
+	color: #fff;
+}
+.contProj p b{
+	color: #3a3939;
+	background: transparent;
+	transition: .8s all;
+}
+.cntProyect:hover + p b{
+	color: #3a3939;
+}
+
+
+
+@media only screen and (max-width: 450px) {
+	.contProj{
+		width: 100%;
+		max-width: 300px;
+	}
+	.cntProyect{
+		max-width: 300px;
+		height: 300px;
+	}    
+}
+@media only screen and (max-width: 270px) {
+    .contProj{
+		width: 100%;
+		max-width: 200px;
+	}
+	.cntProyect{
+		max-width: 200px;
+		height: 200px;
+	}  
+}
+
+

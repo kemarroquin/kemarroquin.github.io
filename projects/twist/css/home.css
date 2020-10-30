@@ -1,0 +1,232 @@
+@font-face{
+	font-family: bebas;
+	src: url(../fonts/BebasNeue.otf);
+}
+@font-face{
+	font-family: bird;
+	src: url(../fonts/QuinchoScript_PersonalUse.ttf);
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.cont1{
+	width: 100%;
+	padding: 10px;
+	height: 700px;
+	background: #f9db79;
+	position: relative;
+}
+.cont1 a{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	text-decoration: none;
+	color: #000;
+	font-family: bird;
+	font-size: 60px;
+	font-style: normal;
+	z-index: 4;
+}
+.cont1 img{
+	position: absolute;
+	display: block;
+	top: 80px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 400px;
+}
+.cont1 h3{
+	font-size: 40px;
+	font-family: bebas;
+	color: #fff;
+	top: 80px;
+	display: block;
+	text-align: center;
+	margin-top: 260px;
+	position: relative;
+	z-index: 2;
+	letter-spacing: 7px;
+}
+.cont1 h1{
+	font-size: 150px;
+	font-family: bebas;
+	color: #fff;
+	top: 80px;
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	position: relative;
+	z-index: 2;
+	letter-spacing: 30px;
+}
+
+.cont2, .cont3{
+	display: flex;
+	height: 600px;
+	overflow: hidden;
+	width: 100%;
+}
+.cont2 .contINFO, .cont3 .contINFO{
+	width: 50%;
+	height: 100%;
+	position: relative;
+	padding: 10px;
+}
+.cont2 .contINFO2{
+	width: 300px;
+	position: absolute;
+	left: 100px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.cont3 .contINFO2{
+	width: 300px;
+	position: absolute;
+	right: 100px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.cont2 .contINFO2 h1, .cont3 .contINFO2 h1{
+	text-align: center;
+	font-family: bebas;
+	letter-spacing: 10px;
+	display: block;
+	margin-bottom: 20px;
+	font-size: 40px;
+}
+.cont2 .contINFO2 h3, .cont3 .contINFO2 h3{
+	text-align: center;
+	font-family: bird;
+	display: block;
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+.cont2 .contINFO2 p, .cont3 .contINFO2 p{
+	text-align: center;
+	font-family: bebas;
+	display: block;
+	margin-bottom: 20px;
+	font-size: 18px;
+	color: #444;
+}
+.cont2 .contINFO2 p span, .cont3 .contINFO2 p span{
+	font-family: bird;
+	font-size: 25px;
+	font-weight: bold;
+	margin: 0px 5px;
+}
+#contIMG1{
+	background: url(../img/sabores.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 50%;
+	height: 100%;
+}
+#contIMG2{
+	background: url(../img/lugar.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 50%;
+	height: 100%;
+}
+.back_cont{
+	display: block;
+	height: 600px;
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+}
+.bc_info{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+.back_cont h3{
+	text-align: center;
+	font-family: bebas;
+	display: block;
+	margin-bottom: 20px;
+	font-size: 40px;
+	color: #fff;
+	letter-spacing: 5px;
+}
+.back_cont h1{
+	text-align: center;
+	font-family: bebas;
+	display: block;
+	margin-bottom: 20px;
+	font-size: 150px;
+	color: #fff;
+	letter-spacing: 30px;
+}
+#bcont1{
+	background-color: #b5e8d5;
+	background-image: url(../img/sin_lactosa.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+#bcont2 .cont1{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background: #ffbfb3;
+}
+#bcont2 .cont2{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background: url(../img/bac_rayasblancas.png);
+	background-repeat: no-repeat;
+	background-position: center 0px;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+#bcont2 .cont3{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background: url(../img/back_licuados.png);
+	background-repeat: no-repeat;
+	background-position: center -50px;
+	background-attachment: initial;
+	background-size: 80%;
+}
+#bcont2 h3{
+	text-align: center;
+	font-family: bebas;
+	display: block;
+	margin-bottom: 20px;
+	font-size: 40px;
+	color: #fff;
+	letter-spacing: 5px;
+	position: relative;
+	z-index: 3;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, .4);
+}
+#bcont2 h1{
+	text-align: center;
+	font-family: bebas;
+	display: block;
+	margin-bottom: 20px;
+	font-size: 100px;
+	color: #fff;
+	letter-spacing: 30px;
+	position: relative;
+	z-index: 3;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, .4);
+}
+
+
+

@@ -1,0 +1,97 @@
+@font-face{
+	font-family: bebas;
+	src: url(../fonts/BebasNeue.otf);
+}
+@font-face{
+	font-family: bird;
+	src: url(../fonts/QuinchoScript_PersonalUse.ttf);
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.cont1{
+	width: 100%;
+	padding: 10px;
+	height: 500px;
+	background: #d2ff5e;
+	position: relative;
+}
+.cont1 a{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	text-decoration: none;
+	color: #000;
+	font-family: bird;
+	font-size: 60px;
+	font-style: normal;
+	z-index: 4;
+}
+.cont1 h3{
+	font-size: 40px;
+	font-family: bebas;
+	color: #fff;
+	top: 40px;
+	display: block;
+	text-align: center;
+	margin-top: 130px;
+	position: relative;
+	z-index: 2;
+	letter-spacing: 2px;
+}
+.cont1 h1{
+	font-size: 150px;
+	font-family: bebas;
+	color: #fff;
+	top: 40px;
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	position: relative;
+	z-index: 2;
+	letter-spacing: 20px;
+}
+
+.galeria{
+	display: block;
+	width: 100%;
+	padding: 20px;
+	overflow: hidden;
+}
+.galeria h1{
+	display: block;
+	width: 100%;
+	margin-bottom: 40px;
+	font-size: 50px;
+	font-family: bird;
+	color: #444;
+	text-align: center;
+}
+.galeria p{
+	display: block;
+	width: 100%;
+	margin-bottom: 40px;
+	font-size: 20px;
+	font-family: bebas;
+	color: #444;
+	text-align: right;
+}
+.gal_ppal{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.cont_gal{
+	margin: 5px;
+	width: 300px;
+	height: 100px;
+	overflow: hidden;
+	border: 5px solid #d2ff5e;
+}
+.cont_gal img{
+	width: 100%;
+}
+

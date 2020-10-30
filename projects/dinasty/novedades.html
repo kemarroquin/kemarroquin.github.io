@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Novedades - DINASTY</title>
+	<script src="js/jquery-3.2.1.js"></script>
+	<link rel="icon" type="image/png" href="img/logo2.png"/>
+	<link rel="stylesheet" href="icons/styles.css">
+	<link rel="stylesheet" href="css/general.css">
+	<script src="js/general.js"></script>
+	<link rel="stylesheet" href="css/novedades.css">
+	<script src="js/novedades.js"></script>
+</head>
+<body>
+	<div class="load"></div>
+	<div class="search">
+		<button class="closeSearch">X</button>
+		<div class="cntPpalSearch">
+			<p>Ingrese el nombre del producto...</p>
+			<div class="cntSearch">
+				<input type="text" id="searchI" name="searchI" placeholder="Ropa, Joyería...">
+				<button for="searchI" class="icon-find"></button>
+			</div>
+		</div>	
+		<div class="result"></div>
+	</div>
+
+	<div class="contPpal">
+		<div class="ppal">
+			<div class="page">
+				<div class="headVerti">
+					<button class="btnLogo icon-bars menuShow"></button>
+					<button class="btnFind icon-find"></button>
+					<div class="cntRs">
+						<a href="" class="rsSoci icon-facebook"></a>
+						<a href="" class="rsSoci icon-instagram"></a>
+					</div>
+				</div>
+				<div class="headHori">
+					<div class="contHori">
+						<div class="miniHori">
+							<ul class="menu">
+								<li>
+									<a href="inicio.html">
+										<span class="icon-cplus"></span>
+										<span>Inicio</span>
+									</a>
+								</li>
+								<li>
+									<a href="novedades.html" class="here">
+										<span class="icon-cplus"></span>
+										<span>Novedades</span>
+									</a>
+								</li>
+								<li class="moreOpcM1">
+									<a>
+										<span class="icon-cplus"></span>
+										<span>Catálogo</span>
+									</a>
+									<div class="moreOpcM11">
+										<div class="divArrow"></div>
+										<a href="cat-ropa.html">Ropa</a>
+										<a href="cat-acce.html">Accesorios</a>
+									</div>
+								</li>
+								<li>
+									<a href="contacto.html">
+										<span class="icon-cplus"></span>
+										<span>Contacto</span>
+									</a>
+								</li>
+							</ul>
+							<img src="img/logo1.png" alt="" class="logo">
+							<img src="img/logo4.png" alt="" class="logo2">
+							<img src="img/logo2.png" alt="" class="logo3">
+						</div>
+					</div>
+				</div>
+				<div class="menu2">
+					<button href="" class="btnRespMenu">X</button>
+					<div class="menu2Opc">
+						<a href="inicio.html">Inicio</a>
+						<a href="novedades.html" class="here">Novedades</a>
+						<div class="moreOpc2">
+							<input type="checkbox" id="seeMoreOpc2">
+							<label href="catalogo.html" for="seeMoreOpc2">Catálogo</label>
+							<div class="cntMoreOpc">
+								<a href="cat-ropa.html">Ropa</a>
+								<a href="cat-acce.html">Accesorios</a>
+							</div>
+						</div>
+						<a href="contacto.html">Contacto</a>
+					</div>
+					<img src="img/logo3.png" alt="" class="menu2Log">
+				</div>
+				
+				<div class="cntPpal">
+					<div class="cntBtnSl1">
+						<div class="barraLeft"></div>
+						<img src="img/rosaL.png" alt="">
+					</div>
+					<div class="cntBtnSl2">
+						<div class="barraRight"></div>
+						<img src="img/rosaR.png" alt="">
+					</div>
+					<div class="sliderContent">
+						<div class="slider" id="slider">
+							<div class="slider_cont">
+								<img src="img/novedades/novedades1.jpg">
+								<div class="cntPrice infNov1_1">
+									<span class="icon-lcircle"></span>
+									<div class="cntPriceInf">
+										<h1>
+											Camiseta negra <br>
+											Lino encaje
+										</h1>
+										<p>$35.00</p>
+									</div>
+								</div>
+							</div>
+							<div class="slider_cont">
+								<img src="img/novedades/novedades2.jpg">
+								<div class="cntPrice infNov2_1">
+									<span class="icon-lcircle"></span>
+									<div class="cntPriceInf">
+										<h1>
+											Blusa Lino <br>
+											a rayas
+										</h1>
+										<p>$16.95</p>
+									</div>
+								</div>
+								<div class="cntPrice infNov2_2">
+									<span class="icon-lcircle"></span>
+									<div class="cntPriceInf">
+										<h1>
+											Pantalon holgado <br>
+											Lino a rayas
+										</h1>
+										<p>$21.90</p>
+									</div>
+								</div>
+							</div>
+							<div class="slider_cont">
+								<img src="img/novedades/novedades3.jpg">
+								<div class="cntPrice infNov3_1">
+									<span class="icon-lcircle"></span>
+									<div class="cntPriceInf">
+										<h1>
+											Cartera acolchada <br>
+											negra
+										</h1>
+										<p>$30.00</p>
+									</div>
+								</div>
+							</div>
+							<div class="slider_cont">
+								<img src="img/novedades/novedades4.jpg">
+								<div class="cntPrice infNov4_1">
+									<span class="icon-lcircle"></span>
+									<div class="cntPriceInf">
+										<h1>
+											Blusa estilo Demin <br>
+											cielo claro
+										</h1>
+										<p>$22.00</p>
+									</div>
+								</div>
+								<div class="cntPrice infNov4_2">
+									<span class="icon-lcircle"></span>
+									<div class="cntPriceInf">
+										<h1>
+											Bandolera <br>
+											Baby Blue
+										</h1>
+										<p>$45.00</p>
+									</div>
+								</div>
+							</div>
+							<div class="slider_cont">
+								<img src="img/novedades/novedades5.jpg">
+								<div class="cntPrice infNov5_1">
+									<span class="icon-lcircle"></span>
+									<div class="cntPriceInf">
+										<h1>
+											<br> Scarf estampada
+										</h1>
+										<p>$9.99</p>
+									</div>
+								</div>
+								<div class="cntPrice infNov5_2">
+									<span class="icon-lcircle"></span>
+									<div class="cntPriceInf">
+										<h1>
+											Blusa estilo Demin <br>
+											rayada
+										</h1>
+										<p>$19.90</p>
+									</div>
+								</div>
+								<div class="cntPrice infNov5_3">
+									<span class="icon-lcircle"></span>
+									<div class="cntPriceInf">
+										<h1>
+											Pantalon Holgado <br>
+											estilo Demin rayado
+										</h1>
+										<p>$25.00</p>
+									</div>
+								</div>
+							</div>
+							<div class="slider_cont">
+								<img src="img/novedades/novedades6.jpg">
+								<div class="cntPrice infNov6_1">
+									<span class="icon-lcircle"></span>
+									<div class="cntPriceInf">
+										<h1>
+											<br> Top Halter
+										</h1>
+										<p>$28.50</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cntBtnSlide">
+						<button id="btnNext" class="icon-aright"></button>
+						<button id="btnPrev" class="icon-aleft"></button>
+					</div>
+
+					<div class="sliderContent2">
+						<div class="slider2" id="slider2">
+							<div class="slider_cont2">
+								<img src="img/novedades/nov1.jpg" alt="">
+								<div class="infSli2">
+									<h1>
+										Blazer Daysi amarilla
+									</h1>
+									<p>$35.50</p>
+								</div>
+							</div>
+							<div class="slider_cont2">
+								<img src="img/novedades/nov2.jpg" alt="">
+								<div class="infSli2">
+									<h1>
+										Blusa Estampada
+									</h1>
+									<p>$15.99</p>
+								</div>
+							</div>
+							<div class="slider_cont2">
+								<img src="img/novedades/nov3.jpg" alt="">
+								<div class="infSli2">
+									<h1>
+										Bombonera de Cangrejos
+									</h1>
+									<p>$50.75</p>
+								</div>
+							</div>
+							<div class="slider_cont2">
+								<img src="img/novedades/nov4.jpg" alt="">
+								<div class="infSli2">
+									<h1>
+										Caja bordada
+									</h1>
+									<p>$22.90</p>
+								</div>
+							</div>
+							<div class="slider_cont2">
+								<img src="img/novedades/nov5.jpg" alt="">
+								<div class="infSli2">
+									<h1>
+										Camisa Oversize
+									</h1>
+									<p>$10.00</p>
+								</div>
+							</div>
+							<div class="slider_cont2">
+								<img src="img/novedades/nov6.jpg" alt="">
+								<div class="infSli2">
+									<h1>
+										Collar de Cordón con Caracolas
+									</h1>
+									<p>$8.50</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cntBtnSlide2">
+						<button id="btnPrev2" class="icon-aleft"></button>
+						<button id="btnNext2" class="icon-aright"></button>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="footer">
+				<div class="cntFt cntFot1">
+					<img src="img/logo3.png" alt="">
+					<p>
+						Copyright 2018 | All Rights Reserved <br>
+						Dinasty Boutique
+					</p>
+				</div>
+				<div class="cntFt cntFot2">
+					<p>
+						<b>Sucursales</b><br>
+						Metrocentro <br>
+						Metrosur <br>
+						Soho Cascadas
+					</p>
+					<br><br>
+					<span>
+						info@dinasty.es <br>
+						Tel. 2249-6523
+					</span>
+				</div>
+				<div class="cntFt cntFot3">
+					<a href="#">Servicio al Cliente</a>
+					<a href="#">Contacto</a>
+					<a href="#">Terminos Legales</a>
+					<a href="#">Política de Privacidad</a>
+					<a href="#">Seguridad del Sitio</a>
+					<a href="#">Política de Devoluciones</a>
+				</div>
+				<div class="cntFt cntFot4">
+					<a href="#">Busqueda Avanzada</a>
+					<a href="#">Listado de Marcas</a>
+				</div>
+				<div class="cntFt cntFot5">
+					<h1>NEWSLETTER</h1>
+					<br>
+					<p>
+						Newsletter <br>
+						Sucripción a Newsletter
+					</p>
+					<br>
+					<div class="suscrip">
+						<input type="email" id="email" name="email" placeholder="E-mail">
+						<button class="icon-anright"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

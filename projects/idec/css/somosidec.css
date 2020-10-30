@@ -1,0 +1,226 @@
+.namePage{
+	color: #fff;
+}
+.respeNmPg{
+	color: #fff;
+}
+.buttonsMenu button{
+	color: #fff;
+}
+.footer{
+	border-top: 1px solid;
+}
+.foot1{
+	border-color: #000;
+	background: #000;
+}
+.foot2{
+	border-color: #fff;
+	background: transparent;
+}
+.contFoot1 p{
+	color: #fff;
+}
+.contFoot2 a{
+	background: #fff;
+}
+.rs-foot1{
+	color: #000;
+}
+.rs-foot2{
+	color: #0047BA;
+}
+.infoFoot{
+	color: #fff;
+}
+.infoFoot span{
+	color: #89DC65;
+}
+
+.fondoSomos1, .fondoSomos2{
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.fondoSomos1{
+	display: block;
+}
+.fondoSomos2{
+	display: none;
+}
+.fondoSomos1 img, .fondoSomos2 img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.cntPpal{
+	position: relative;
+	z-index: 2;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.cntBtnSomos{
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	clear: both;
+	display: flex;
+	justify-content: flex-start;
+}
+.btnSomos1, .btnSomos2{
+	display: block;
+	padding: 8px 25px;
+	border: none;
+	background: transparent;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	font-size: 14px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	transition: .7s all;
+}
+.btnActive1{
+	background: rgba(255,255,255,.4);
+	color: #458828;
+	font-weight: bold;
+}
+.btnActive2{
+	background: rgba(255,255,255,.4);
+	color: #0047BA;
+	font-weight: bold;
+}
+.cntSomos{
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	height: 444px;
+	background: rgba(255,255,255,.4);
+	overflow: hidden;
+	border-radius: 10px;
+	border-top-left-radius: 0px;
+	position: relative;
+}
+.cntInfSo{
+	display: none;
+	width: 100%;
+	height: 444px;
+	color: #fff;
+}
+.infoSomos1, .infoSomos2{
+	display: flex;
+	width: 100%;
+	height: 444px;
+}
+.infSo{
+	display: block;
+	width: 100%;
+	position: relative;
+	padding: 30px;
+}
+.infSo h1{
+	text-align: right;
+	font-size: 60px;
+	display: block;
+	font-weight: normal;
+	display: block;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	padding-right: 30px;
+}
+.infSo p{
+	display: block;
+	width: 100%;
+	font-size: 14px;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	padding: 0px 30px 0px 0px;
+}
+.infoSomos1 h1{
+	color: #458828;
+}
+.infoSomos2 h1{
+	color: #0047BA;
+}
+
+
+
+
+/*RESPONSIVE*/
+
+@media only screen and (max-width: 700px){
+
+	.cntBtnSomos{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		margin-bottom: 20px;
+		width: 100%;
+	}
+	.cntInfSo{
+		height: auto;
+		padding: 30px;
+	}
+	.btnSomos1, .btnSomos2{
+		border-radius: 5px;
+		margin: 5px;
+	}
+	.cntSomos{
+		height: auto;
+		border-radius: 10px;
+	}
+	.infoSomos1, .infoSomos2{
+		display: block;
+		height: auto;
+	}
+	.infSo{
+		padding: 0px;
+	}
+	.infSo h1{
+		position: relative;
+		top: 0;
+		transform: translateY(0%);
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.infSo p{
+		position: relative;
+		top: 0;
+		transform: translateY(0%);
+		text-align: center;
+	}
+
+}
+
+@media only screen and (max-width: 420px){
+
+	.cntInfSo{
+		height: auto;
+		padding: 10px;
+	}
+	.infSo h1{
+		font-size: 30px;
+	}
+	.infSo p{
+		font-size: 13px;
+	}
+
+}
+
+
+
+
+
+
+

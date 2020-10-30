@@ -1,0 +1,253 @@
+body{
+	font-family: MyriadPro;
+	overflow-x: hidden;
+	overflow-y: auto!important;
+	width: 100%;
+}
+html{
+	overflow-x: hidden;
+	cursor: grab;
+	overflow-y: auto!important;
+}
+
+
+/*OPCIONES*/
+.opc_cont_animate_about{
+	position: fixed;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%) translateZ(0);
+	z-index: 6500;
+	list-style: none;
+}
+.opc_cont_animate_about li{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	position: relative;
+	cursor: pointer;
+	margin: 15px 0px;
+	display: block;
+}
+.opc_cont_animate_about li a{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	position: relative;
+	cursor: pointer;
+	display: block;
+}
+.opc_cont_animate_about li a:before{
+	content: '';
+	position: absolute;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	transition: .5s all;
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.5);
+	pointer-events: all;
+}
+.opc_cont_animate_about li:hover a:before{
+	color: #fff;
+	transform: translate(-50%, -50%) scale(1.4);
+}
+.opc_cont_animate_about li a.active:before{
+	color: #fff;
+	transform: translate(-50%, -50%) scale(1.4);
+}
+
+.contenedor{
+	display: block;
+	width: 100%;
+}
+.sections{
+	display: block;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+.sections1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.img-bg-first, .img-bg-second,.img-bg-second{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+.img-logo-first{
+	position: relative;
+	z-index: 10;
+	width: 150px;
+}
+
+.sections3{
+	font-family: open-sans-regular;
+}
+
+.cnt_decor{
+	display: flex;
+	position: absolute;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+.cnt_decor1, .cnt_decor2{
+	width: 70px;
+	height: 300px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.cnt_decor1 div, .cnt_decor2 div{
+	display: block;
+	width: 20px;
+	height: 100%;
+	background: #fa9aba;
+}
+.cnt_decor1 span, .cnt_decor2 span{
+	width: 25px;
+	height: 25px;
+	background: #fa9aba;
+	color: #fff;
+	border-radius: 50%;
+	display: block;
+	text-align: center;
+	font-style: 25px;
+	line-height: 30px;
+}
+
+.cntInfo{
+	position: relative;
+	z-index: 20;
+	display: block;
+	padding: 60px 100px;
+}
+.cntInfo h1{
+	color: #fa9aba;
+	font-weight: normal;
+	font-size: 60px;
+	letter-spacing: 3px;
+}
+.cntInfo h2{
+	font-size: 20px;
+	color: #4b5faa;
+	font-weight: normal;
+	letter-spacing: 10px;
+	line-height: 25px;
+}
+.cntInfo h2 b{
+	font-weight: normal;
+	font-size: 30px;
+	letter-spacing: 15px;
+	font-family: open-sans-bold;
+}
+.cnt_cntInfo{
+	padding-top: 20px;
+	display: block;
+}
+.cnt_cntInfo h3{
+	font-size: 20px;
+	letter-spacing: 5px;
+	color: #4b5faa;
+}
+.cnt_cntInfo h3{
+	font-size: 15px;
+	letter-spacing: 5px;
+	color: #4b5faa;
+}
+.cnt_cntInfo h4{
+	font-size: 20px;
+	letter-spacing: 5px;
+	color: #4b5faa;
+	font-family: AngleciaPro;
+}
+.cnt_cntInfo p{
+	font-size: 10px;
+	color: #4b5faa;
+	font-weight: bold;
+	padding-top: 10px;
+}
+.cnt_cntInfo3 a{
+	font-size: 12px;
+	text-align: center;
+	padding: 5px 15px;
+	margin-top: 10px;
+	display: block;
+	width: 125px;
+	border: 2px solid #4b5faa;
+	color: #4b5faa;
+	pointer-events: all;
+}
+
+@media only screen and (max-width: 1000px){
+	.cntInfo{
+		padding: 70px 10px;
+	}
+	.cnt_decor{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 500px){
+	.cnt_cntInfo br{
+		display: none;
+	}
+	.cntInfo{
+		text-align: center;
+	}
+	.cnt_cntInfo1, .cnt_cntInfo2{
+		padding: 10px;
+	}
+	.sections3{
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media only screen and (max-height: 600px){
+	.cnt_cntInfo{
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+	.cnt_cntInfo1, .cnt_cntInfo2{
+		padding: 10px;
+	}
+	.sections3{
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media only screen and (max-width: 540px){
+	.cnt_cntInfo{
+		display: block;
+		justify-content: space-between;
+		width: 100%;
+	}
+	.cnt_cntInfo3 a{
+		margin: 10px auto;
+	}
+}

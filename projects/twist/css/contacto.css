@@ -1,0 +1,193 @@
+@font-face{
+	font-family: bebas;
+	src: url(../fonts/BebasNeue.otf);
+}
+@font-face{
+	font-family: bird;
+	src: url(../fonts/QuinchoScript_PersonalUse.ttf);
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.cont{
+	width: 100%;
+	padding: 10px;
+	height: 500px;
+	background: #c3a9d4;
+	position: relative;
+}
+.cont a{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	text-decoration: none;
+	color: #000;
+	font-family: bird;
+	font-size: 60px;
+	font-style: normal;
+	z-index: 4;
+}
+.cont h3{
+	font-size: 40px;
+	font-family: bebas;
+	color: #fff;
+	top: 40px;
+	display: block;
+	text-align: center;
+	margin-top: 130px;
+	position: relative;
+	z-index: 2;
+	letter-spacing: 2px;
+}
+.cont h1{
+	font-size: 150px;
+	font-family: bebas;
+	color: #fff;
+	top: 40px;
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	position: relative;
+	z-index: 2;
+	letter-spacing: 20px;
+}
+
+.contenedorppal{
+	width: 100%;
+	margin: 10px auto;
+	display: flex;
+	overflow: hidden;
+	padding: 10px 30px;
+}
+
+.cont1{
+	width: 50%;
+}
+.cont1 h1{
+	font-size: 30px;
+	color: #000;
+	font-weight: bold;
+	display: block;
+	padding: 10px;
+	border: 2px solid #000;
+	width: 200px;
+	text-align: center;
+	font-family: bird;
+}
+.cont1 p{
+	font-size: 20px;
+	font-family: bebas;
+	color: #333;
+}
+.cont1 h2{
+	color: #000;
+	font-family: bird;
+}
+.cont1 .info{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+.cont1 .info label{
+	display: block;
+	text-align: center;
+	width: 250px;
+	text-decoration: none;
+	font-family: agency fb;
+	font-size: 25px;
+	margin: 10px;
+	color: #000;
+}
+.cont1 .info [class*="icon-"]:before{
+	font-size: 50px;
+	color: #c3a9d4;
+}
+
+.cont2{
+	width: 50%;
+}
+.cont2 input, .cont2 textarea{
+	outline: none;
+}
+.cont2 form{
+	width: 100%;
+	padding: 10px;
+	border: 2px solid #000;
+}
+.cont2 form p{
+	display: block;
+	width: 100%;
+	font-size: 25px;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-family: bird;
+}
+.cont2 form p label{
+	color: gray;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: bebas;
+	letter-spacing: 4px;
+}
+.cont2 form input, .cont2 form select, .cont2 form textarea{
+	width: 100%;
+	font-family: Century Gothic;
+	font-size: 20px;
+	padding: 10px;
+}
+.cont2 form textarea{
+	width: 100%;
+	height: 250px;
+	max-width: 100%;
+	max-height: 250px;
+}
+.cont2 form .botonsito{
+	display: block;
+	width: 50%;
+	margin: 10px auto;
+	background: none;
+	font-weight: bold;
+	border: 2px solid #000;
+	cursor: pointer;
+	font-family: bird;
+	font-size: 25px;
+}
+.cont2 form .botonsito:hover{
+	-webkit-transform: scale(1.06);
+	-ms-transform: scale(1.06);
+	-o-transform: scale(1.06);
+	transform: scale(1.06);
+}
+.cont2 form .botonsito:active{
+	background: #c3a9d4;
+	color: #000;
+}
+
+
+
+
+/*MENSAJES DE ERROR*/
+
+.mensaje_error{
+	width: 100%;
+	padding-left: 15px;
+	color: red;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: bebas;
+}
+.mensaje_error:before{
+	content: '*  ';
+	color: red;
+}
+
+input ~ [id*="error-"]{
+	display: none;
+}

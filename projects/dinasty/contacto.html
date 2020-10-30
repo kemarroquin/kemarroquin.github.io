@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacto - DINASTY</title>
+	<script src="js/jquery-3.2.1.js"></script>
+	<link rel="icon" type="image/png" href="img/logo2.png"/>
+	<link rel="stylesheet" href="icons/styles.css">
+	<link rel="stylesheet" href="css/general.css">
+	<script src="js/general.js"></script>
+	<link rel="stylesheet" href="css/contacto.css">
+	<script src="js/contacto.js"></script>
+</head>
+<body>
+	<div class="load"></div>
+	<div class="search">
+		<button class="closeSearch">X</button>
+		<div class="cntPpalSearch">
+			<p>Ingrese el nombre del producto...</p>
+			<div class="cntSearch">
+				<input type="text" id="searchI" name="searchI" placeholder="Ropa, Joyería...">
+				<button for="searchI" class="icon-find"></button>
+			</div>
+		</div>	
+		<div class="result"></div>
+	</div>
+
+	<div class="contPpal">
+		<div class="ppal">
+			<div class="page">
+				<div class="headVerti">
+					<button class="btnLogo icon-bars menuShow"></button>
+					<button class="btnFind icon-find"></button>
+					<div class="cntRs">
+						<a href="" class="rsSoci icon-facebook"></a>
+						<a href="" class="rsSoci icon-instagram"></a>
+					</div>
+				</div>
+				<div class="headHori">
+					<div class="contHori">
+						<div class="miniHori">
+							<ul class="menu">
+								<li>
+									<a href="inicio.html">
+										<span class="icon-cplus"></span>
+										<span>Inicio</span>
+									</a>
+								</li>
+								<li>
+									<a href="novedades.html">
+										<span class="icon-cplus"></span>
+										<span>Novedades</span>
+									</a>
+								</li>
+								<li class="moreOpcM1">
+									<a>
+										<span class="icon-cplus"></span>
+										<span>Catálogo</span>
+									</a>
+									<div class="moreOpcM11">
+										<div class="divArrow"></div>
+										<a href="cat-ropa.html">Ropa</a>
+										<a href="cat-acce.html">Accesorios</a>
+									</div>
+								</li>
+								<li>
+									<a href="contacto.html" class="here">
+										<span class="icon-cplus"></span>
+										<span>Contacto</span>
+									</a>
+								</li>
+							</ul>
+							<img src="img/logo1.png" alt="" class="logo">
+							<img src="img/logo4.png" alt="" class="logo2">
+							<img src="img/logo2.png" alt="" class="logo3">
+						</div>
+					</div>
+				</div>
+				<div class="menu2">
+					<button href="" class="btnRespMenu">X</button>
+					<div class="menu2Opc">
+						<a href="inicio.html">Inicio</a>
+						<a href="novedades.html">Novedades</a>
+						<div class="moreOpc2">
+							<input type="checkbox" id="seeMoreOpc2">
+							<label href="catalogo.html" for="seeMoreOpc2">Catálogo</label>
+							<div class="cntMoreOpc">
+								<a href="cat-ropa.html">Ropa</a>
+								<a href="cat-acce.html">Accesorios</a>
+							</div>
+						</div>
+						<a href="contacto.html" class="here">Contacto</a>
+					</div>
+					<img src="img/logo3.png" alt="" class="menu2Log">
+				</div>
+				
+				<div class="cntPpal">
+					<div class="cntBtnSl1">
+						<div class="barraLeft"></div>
+						<img src="img/rosaL.png" alt="">
+					</div>
+					<div class="cntBtnSl2">
+						<div class="barraRight"></div>
+						<img src="img/rosaR.png" alt="">
+					</div>
+					<form class="form" id="form">
+						<div class="cntFrm1">
+							<div class="cnFr1">
+								<img src="img/contacto.png" alt="" class="imgFrm">
+							</div>
+							<div class="cnFr2">
+								<h4>CONTÁCTANOS</h4>
+								<div class="formu1">
+									<div class="formuu">
+										<label for="frmN">Nombre</label>
+										<input type="text" id="frmN" name="frmN" placeholder="Ej. Doris Hernández">
+									</div>
+									<div class="formuu">
+										<label for="frmT">Teléfono</label>
+										<input type="number" id="frmT" name="frmT" placeholder="Ej. 2257-7777">
+									</div>
+								</div>
+								<div class="formu1">
+									<div class="formuu">
+										<label for="frmE">E-mail</label>
+										<input type="text" id="frmE" name="frmE" placeholder="Ej. example@example.com">
+									</div>
+									<div class="formuu">
+										<label for="frmA">Asunto</label>
+										<input type="text" id="frmA" name="frmA" placeholder="Ej. Precios">
+									</div>
+								</div>
+								<div class="formu2">
+									<label for="frmM">Mensaje</label>
+									<textarea name="frmM" id="frmM" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit."></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="cntFrm2">
+							<input type="submit" value="ENVIAR" class="btnSubmit">
+							<div class="frmDir">
+								<span>METROCENTRO</span>
+								<p>
+									Local No.67 - A, Anexo Torre Roble <br>
+									Metrocentro, San Salvador. <br>
+									<b>Teléfono:</b> 2260-3417
+								</p>
+								<span>LAS CASCADAS</span>
+								<p>
+									Calle a Santa Tecla, Local L - 140, Centro <br>
+									Comercial las Cascadas, Antiguo <br>
+									Cuscatlán, La Libertad. <br>
+									<b>Teléfono:</b> 2243-9727
+								</p>
+								<span>METROSUR</span>
+								<p>
+									Local N.6, Col. Miramonte C.C <br>
+									Metrosur, San Salvador. <!-- <br>
+									<b>Teléfono:</b> 2243-9727 -->
+								</p>
+							</div>
+						</div>
+					</form>
+				</div>
+
+			</div>
+
+			<div class="footer">
+				<div class="cntFt cntFot1">
+					<img src="img/logo3.png" alt="">
+					<p>
+						Copyright 2018 | All Rights Reserved <br>
+						Dinasty Boutique
+					</p>
+				</div>
+				<div class="cntFt cntFot2">
+					<p>
+						<b>Sucursales</b><br>
+						Metrocentro <br>
+						Metrosur <br>
+						Soho Cascadas
+					</p>
+					<br><br>
+					<span>
+						info@dinasty.es <br>
+						Tel. 2249-6523
+					</span>
+				</div>
+				<div class="cntFt cntFot3">
+					<a href="#">Servicio al Cliente</a>
+					<a href="#">Contacto</a>
+					<a href="#">Terminos Legales</a>
+					<a href="#">Política de Privacidad</a>
+					<a href="#">Seguridad del Sitio</a>
+					<a href="#">Política de Devoluciones</a>
+				</div>
+				<div class="cntFt cntFot4">
+					<a href="#">Busqueda Avanzada</a>
+					<a href="#">Listado de Marcas</a>
+				</div>
+				<div class="cntFt cntFot5">
+					<h1>NEWSLETTER</h1>
+					<br>
+					<p>
+						Newsletter <br>
+						Sucripción a Newsletter
+					</p>
+					<br>
+					<div class="suscrip">
+						<input type="email" id="email" name="email" placeholder="E-mail">
+						<button class="icon-anright"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

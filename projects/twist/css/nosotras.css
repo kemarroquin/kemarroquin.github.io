@@ -1,0 +1,230 @@
+@font-face{
+	font-family: bebas;
+	src: url(../fonts/BebasNeue.otf);
+}
+@font-face{
+	font-family: bird;
+	src: url(../fonts/QuinchoScript_PersonalUse.ttf);
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.cont1{
+	width: 100%;
+	padding: 10px;
+	height: 500px;
+	background: #84ff9d;
+	position: relative;
+}
+.cont1 a{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	text-decoration: none;
+	color: #000;
+	font-family: bird;
+	font-size: 60px;
+	font-style: normal;
+	z-index: 4;
+}
+.cont1 h3{
+	font-size: 40px;
+	font-family: bebas;
+	color: #fff;
+	top: 40px;
+	display: block;
+	text-align: center;
+	margin-top: 130px;
+	position: relative;
+	z-index: 2;
+	letter-spacing: 2px;
+}
+.cont1 h1{
+	font-size: 150px;
+	font-family: bebas;
+	color: #fff;
+	top: 40px;
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	position: relative;
+	z-index: 2;
+	letter-spacing: 20px;
+}
+
+.cont{
+	display: block;
+	width: 100%;
+	padding: 40px;
+	position: relative;
+	overflow: hidden;
+}
+.cont h2{
+	color: #84ff9d;
+	display: block;
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 10px;
+	font-family: bird;
+}
+.cont p{
+	color: #000;
+	display: block;
+	width: 100%;
+	max-width: 500px;
+	text-align: center;
+	font-size: 20px;
+	margin: 50px auto;
+	font-family: bebas;
+}
+
+
+.cont2, .cont3{
+	display: flex;
+	height: 700px;
+	overflow: hidden;
+	width: 100%;
+}
+.cont2 .contINFO, .cont3 .contINFO{
+	width: 50%;
+	height: 100%;
+	position: relative;
+	padding: 10px;
+}
+.cont2 .contINFO2{
+	width: 550px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+.cont3 .contINFO2{
+	width: 550px;
+	position: absolute;
+	right: 50%;
+	top: 50%;
+	transform: translateY(-50%) translateX(50%);
+}
+.cont2 .contINFO2 h1, .cont3 .contINFO2 h1{
+	text-align: center;
+	font-family: bebas;
+	letter-spacing: 10px;
+	display: block;
+	margin-bottom: 20px;
+	font-size: 40px;
+}
+.cont2 .contINFO2 h3, .cont3 .contINFO2 h3{
+	text-align: center;
+	font-family: bird;
+	display: block;
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+.cont2 .contINFO2 ul, .cont3 .contINFO2 ul{
+	width: 100%;
+	list-style: none;
+	padding: 0px;
+}
+.cont2 .contINFO2 ul li, .cont3 .contINFO2 ul li{
+	font-family: bebas;
+	display: block;
+	margin-bottom: 20px;
+	font-size: 18px;
+	color: #444;
+	padding: 0px;
+}
+.cont2 .contINFO2 ul li:before, .cont3 .contINFO2 ul li:before{
+	content: '✔';
+	margin-right: 5px;
+}
+#contIMG1{
+	background: url(../img/lic_politicas.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 50%;
+	height: 100%;
+}
+#contIMG2{
+	background: url(../img/lic_valores.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 50%;
+	height: 100%;
+}
+
+
+.cont_integrantes{
+	padding: 20px;
+	width: 100%;
+	display: block;
+}
+.cont_integrantes h1{
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 60px;
+	font-family: bird;
+	color: #84ff9d;
+	margin-bottom: 40px;
+}
+.cont_int_ppal{
+	width: 100%;
+	display: block;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.c_int{
+	width: 321px;
+	padding: 15px;
+	margin: 20px;
+	border: 2px solid #444;
+}
+.c_int img{
+	display: block;
+	width: 150px;
+	height: 150px;
+	margin: auto;
+	border-radius: 20px;
+	border: 5px solid #84ff9d;
+}
+.c_int h3{
+	display: block;
+	font-family: bird;
+	font-size: 40px;
+	text-align: center;
+	margin: 20px auto;
+}
+.c_int p{
+	font-family: bebas;
+	font-size: 25px;
+	color: #444;
+	text-align: center;
+	display: block;
+}
+.c_int ul{
+	list-style: none;
+	width: 100%;
+	padding-left: 40px;
+	margin-top: 40px;
+	display: block; 
+}
+.c_int ul li{
+	display: block;
+	margin: 10px;
+}
+.c_int ul li a{
+	font-size: 18px;
+	font-family: Century Gothic;
+	color: #777;
+	font-weight: bold;
+}
+.c_int ul li a:before{
+	margin-right: 10px;
+	font-size: 22px;
+}
+

@@ -1,0 +1,171 @@
+.cntPpal{
+	padding-top: 60px;
+	padding-bottom: 100px;
+	display: flex;
+	justify-content: center;
+	background: url(../img/fondo1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.menuLinks a{
+	color: #fff;
+}
+.menuLinks a:hover{
+	border-color: #fff;
+}
+.menuLinks a.here{
+	border-color: #fff;
+}
+.rsCont a{
+	color: #969696;
+}
+#btnHeadBar{
+	color: #fff;
+}
+
+.proyectSaludo{
+	display: block;
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	margin-top: 100px;
+	padding: 10px 30px;
+	overflow: hidden;
+}
+.proyectSaludo h1{
+	color: #eab3c0;
+	font-size: 100px;
+	letter-spacing: 10px;
+}
+.proyectSaludo h2{
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: 10px;
+	color: #3a3939;
+}
+.proyectSaludo h3{
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	color: #3a3939;
+}
+
+.contenedor{
+	background: #eaeae1;
+	padding: 100px 20px;
+	min-height: 100%;
+}
+.imgHome1{
+	width: 100%;
+	max-width: 700px;
+	margin: 100px auto;
+	margin-top: 0px;
+	display: block;
+	pointer-events: none;
+}
+.imgHome2{
+	width: 100%;
+	max-width: 700px;
+	margin: 100px auto;
+	display: block;
+	pointer-events: none;
+}
+.imgHome3{
+	width: 100%;
+	max-width: 700px;
+	margin: 100px auto;
+	margin-bottom: 0px;
+	display: block;
+	pointer-events: none;
+}
+
+.cntInfoHome{
+	width: 100%;
+	max-width: 720px;
+	padding: 20px;
+	margin: auto;
+	margin-top: 50px;
+}
+.cntInfoHome p{
+	font-size: 50px;
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.cntInfoHome a{
+	padding: 5px 20px;
+	display: block;
+	width: 150px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background: #ff7a99;
+	border: 3px solid #ff7a99;
+	font-size: 15px;
+	color: #fff;
+	transition: .4s all;
+}
+.cntInfoHome a:hover{
+	background: #fff;
+	color: #ff7a99;
+}
+
+
+@media only screen and (max-width: 750px) {
+    .cntInfoHome p{
+    	font-size: 30px;
+    	text-align: center;
+    }
+    .cntInfoHome a{
+    	margin: auto;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .cntInfoHome{
+    	padding: 5px;
+    }
+    .cntInfoHome p{
+    	font-size: 20px;
+    	text-align: center;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .proyectSaludo h1{
+        font-size: 50px;
+        text-align: center;
+    }
+    .proyectSaludo h2{
+    	font-size: 20px;
+    	text-align: center;
+    	color: #969696;
+    }
+    .proyectSaludo h3{
+    	font-size: 15px;
+    	text-align: center;
+    	color: #969696;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .proyectSaludo h1{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    .proyectSaludo h2{
+    	font-size: 15px;
+    	text-align: center;
+    	color: #969696;
+    }
+    .proyectSaludo h3{
+    	font-size: 15px;
+    	text-align: center;
+    	color: #969696;
+    }
+}
+
+
