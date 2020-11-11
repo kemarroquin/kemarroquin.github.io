@@ -4,7 +4,7 @@ var projects = {
 		'proj' : {
 			'emarroquin' : {
 				'name' : 'Erick Marroquín (WP)',
-				'path' : 'https://emarroquin.com/',
+				'path' : 'https://emarroquindesign.github.io/',
 				'icon' : '',
 				'nick' : 'emarroquin',
 				'info' : {
