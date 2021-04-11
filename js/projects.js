@@ -92,6 +92,15 @@ var projects = {
 				'info' : {
 					'responsive' : ['Responsive','25%']
 				}
+			},
+			'jemarroquin' : {
+				'name' : 'Jaime Marroquín (WP)',
+				'path' : 'projects/jemarroquin/',
+				'icon' : '',
+				'nick' : 'jemarroquin',
+				'info' : {
+					'responsive' : ['Responsive','85%']
+				}
 			}
 		}
 	}
@@ -123,10 +132,15 @@ var rnum = 0;
 for (var proj_1 in projects) {
 	for(var proj_2 in projects[proj_1]["proj"]){
 		rnum = getRandomInt(0, (icons.length - 1));
-		while (svg_take.indexOf(rnum) !== -1){
-			rnum = getRandomInt(0, (icons.length - 1));
+		
+		if (svg_take.length < icons.length){
+			while (svg_take.indexOf(rnum) !== -1){
+				rnum = getRandomInt(0, (icons.length - 1));
+			}
 		}
+
 		projects[proj_1]["proj"][proj_2]["icon"] = icons[rnum];
 		svg_take.push(rnum);
 	}
 }
+

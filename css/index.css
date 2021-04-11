@@ -280,6 +280,9 @@ input,textarea,select,button{
 .pro_theme_ewallet{
 	--ncbg: #F73C28;
 }
+.pro_theme_jemarroquin{
+	--ncbg: #000;
+}
 
 body[data-theme="emarroquin"]{
 	--bg: #F20530;
@@ -414,6 +417,21 @@ body[data-theme="ewallet"] [class*="pro_theme_"]{--ncbg: #fff; --nccolor: #000;}
 body[data-theme="ewallet"] .pro_theme_ewallet{
 	--sbg: #F73C28; --scolor: #fff; --sfsvg: #fff;
 	--ncbg: #F73C28; --nccolor: #fff;
+}
+
+body[data-theme="jemarroquin"]{
+	--bg: #000;
+	--cbg: #000;
+	--color: #fff;
+	--ccolor: #fff;
+	--nccolor: #fff;
+	--fsvg: #fff;
+	--cfsvg: #fff;
+}
+body[data-theme="jemarroquin"] [class*="pro_theme_"]{--ncbg: #fff; --nccolor: #000;}
+body[data-theme="jemarroquin"] .pro_theme_jemarroquin{
+	--sbg: #000; --scolor: #fff; --sfsvg: #fff;
+	--ncbg: #000; --nccolor: #fff;
 }
 
 
